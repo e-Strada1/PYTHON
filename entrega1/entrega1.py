@@ -3,7 +3,7 @@ jugadores = {
     "j2" :{"puntos":50,"muertes":8}
 }
 
-def insertarElementos(jugadores):
+def insertarElementos(jugadores,puntaje,muertes):
     while True:
         (""" Hasta que el nombre no sea valido siempre va a hacer este bucle para registrar un nombre válido""")
         nombre =input("Escribe tu nombre de jugador")
@@ -11,18 +11,31 @@ def insertarElementos(jugadores):
             break
         else:
             print("El nombre no es válido")
-    while True:
-        """ Hasta que los datos de puntos y muertes no sean validos siempre va a hacer este bucle para registrar los datos
-        Esta parte debera recibir los puntos y muertes pasado por parametro.
-        Mi intención es que las variables con los datos de puntos y muertes se declaren aparte y se registren mediante esta funcion de insertar_Elementos"""
-        puntaje = input("Introduce el numero de punto del jugador")
-        muertes = input("Introduce el numero de muertes del jugador")
-        try:
-            puntos = int(puntaje)
-            numMuertes = int(muertes)
-            if(puntos >= 0 and numMuertes >=0):
-                break
-            else:
-                print("Valores introducidos no válidos. Los valores deben ser mayores o iguales a cero")
-        except ValueError:
-            print("Entrada de valores no válida.")
+       
+    try:
+        puntos = int(puntaje)
+        numMuertes = int(muertes)
+    except ValueError:
+        print("Entrada de valores no válida.")
+
+    nuevoJugador = {"puntos":puntos,"muertes":numMuertes} 
+    """ Creamos una variable nuevo jugador para los datos de puntos y muertes """
+    jugadores[nombre] = nuevoJugador
+    """ Creo en el diccionario de jugadores el nuevo jugador con sus datos correspondientes """
+
+def buscarJugador(jugadores):
+    
+    busqueda = input("Que jugador quieres buscar")
+    encontrado = False
+    for clave,valor in jugadores.items():
+        if(clave == busqueda):
+            print("Jugador: "+clave)
+            puntos = valor["puntos"]
+            muertes = valor["muertes"]
+            print("Puntos: "+puntos)
+            print("Muertes: "+muertes)
+            encontrado = True
+            break
+
+    if(encontrado == False):
+        print("El jugador que desea buscar no se encuentra dentro de la lista de jugadores")
