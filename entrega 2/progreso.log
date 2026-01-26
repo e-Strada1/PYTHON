@@ -1,0 +1,11 @@
+2026-01-26 13:37:47,674 - ERROR - Error al cargar JSON: Expecting value: line 1 column 1 (char 0)
+2026-01-26 13:37:47,685 - INFO - --- INICIO DE SESIÓN ---
+2026-01-26 13:37:51,049 - INFO - Listado completo mostrado.
+2026-01-26 13:37:55,184 - INFO - --- FIN DE SESIÓN ---
+2026-01-26 13:38:58,334 - INFO - Fichero JSON cargado desde: d:\2DAW\PYTHON\entrega1\entrega 2\datos.json
+2026-01-26 13:38:58,344 - INFO - --- INICIO DE SESIÓN ---
+2026-01-26 13:39:00,104 - INFO - Listado completo mostrado.
+2026-01-26 13:39:08,500 - INFO - Cambios guardados exitosamente en el archivo JSON.
+2026-01-26 13:39:08,500 - INFO - Registro exitoso: j3
+2026-01-26 13:39:09,664 - INFO - Listado completo mostrado.
+2026-01-26 13:39:11,152 - INFO - --- FIN DE SESIÓN ---
