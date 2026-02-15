@@ -1,0 +1,15 @@
+[
+    {
+        "nombre": "J1",
+        "puntos": 30,
+        "fallos": 0,
+        "tipo": "Especial",
+        "habilidad": "Calculo rápido"
+    },
+    {
+        "nombre": "J2",
+        "puntos": 60,
+        "fallos": 1,
+        "tipo": "Normal"
+    }
+]
